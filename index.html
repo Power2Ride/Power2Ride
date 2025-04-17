@@ -3,32 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Power2Ride</title>
+
+  <!-- Titre SEO -->
+  <title>Power2Ride – Reconditionnement de batteries pour vélos et trottinettes électriques</title>
+
+  <!-- Meta description -->
+  <meta name="description" content="Power2Ride redonne vie à vos batteries de vélos et trottinettes électriques. Reconditionnement, réparation et optimisation écoresponsable de votre mobilité.">
+
+  <!-- Référencement moteur de recherche -->
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Power2Ride">
+  <meta name="keywords" content="reconditionnement batterie vélo, réparation batterie trottinette, batterie lithium, mobilité électrique, écologique, Power2Ride">
+
+  <!-- Open Graph (partage réseaux sociaux) -->
+  <meta property="og:title" content="Power2Ride – Reconditionnement de batteries électriques">
+  <meta property="og:description" content="Reconditionnement, réparation et optimisation de batteries pour vélos et trottinettes électriques. Une alternative écologique et performante.">
+  <meta property="og:image" content="https://power2ride.fr/images/og-image.jpg"> <!-- remplace ceci par l'URL réelle de ton image -->
+  <meta property="og:url" content="https://power2ride.fr/">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Styles CSS -->
   <style>
     body {
       margin: 0;
       font-family: 'Urbanist', sans-serif;
-      background-color: #0e0e0e;
-      color: #f0f0f0;
+      background-color: #f5f5f5;
+      color: #333;
     }
     header {
-      background-color: #1a1a1a;
+      background-color: #2e7d32;
       padding: 2rem;
       text-align: center;
+      color: #fff;
     }
     header h1 {
       font-size: 2.5rem;
-      color: #00ff88;
+      color: #ffffff;
     }
     nav {
       display: flex;
       justify-content: center;
       gap: 2rem;
       padding: 1rem;
+      background-color: #4caf50;
     }
     nav a {
-      color: #00ff88;
+      color: #fff;
       text-decoration: none;
       font-weight: bold;
     }
@@ -36,32 +59,35 @@
       padding: 4rem 2rem;
       max-width: 800px;
       margin: auto;
+      color: #333;
     }
     .cta {
       text-align: center;
       margin-top: 2rem;
     }
     .cta a {
-      background: #00ff88;
-      color: #000;
+      background: #ff9800;
+      color: #fff;
       padding: 1rem 2rem;
       text-decoration: none;
       border-radius: 8px;
       font-weight: bold;
     }
+    .cta a:hover {
+      background: #fb8c00;
+    }
     footer {
-      background-color: #1a1a1a;
+      background-color: #2e7d32;
       text-align: center;
       padding: 2rem;
-      color: #888;
+      color: #fff;
     }
   </style>
 </head>
 <body>
   <header>
     <!-- Logo here -->
-    <img src="logo-power2ride.png" alt="Power2Ride Logo" style="max-height: 80px;">
-    <h1>Power2Ride</h1>
+    <img src="images/logofinalTransbk.png" alt="Power2Ride Logo" style="max-height: 200px;">
     <p>Redonnez vie à votre mobilité électrique</p>
   </header>
 
@@ -73,7 +99,9 @@
 
   <section id="about">
     <h2>A propos</h2>
-    <p>Chez Power2Ride, on reconditionne les batteries de vos vélos et trottinettes électriques pour leur donner une seconde vie. Fiable, éco, et urbain.</p>
+    <p>Chez Power2Ride, nous donnons une nouvelle vie à vos batteries de vélos et trottinettes électriques. 
+    Nous reconditionnons, réparons et augmentons la capacité de vos batteries pour répondre à vos besoins. 
+    Fiable, écologique et adapté à votre mobilité urbaine, notre expertise garantit des performances optimales.</p>
   </section>
 
   <section id="services">
@@ -91,7 +119,19 @@
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Envie d'en savoir plus ? Contacte-nous à <strong>contact@power2ride.fr</strong></p>
+
+    <form action="https://formspree.io/f/xdkeyvbn" method="POST" style="max-width: 600px; margin: auto;">
+      <label for="name" style="display: block; margin-top: 1rem;">Nom :</label>
+      <input type="text" id="name" name="name" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 5px;">
+
+      <label for="email" style="display: block; margin-top: 1rem;">Email :</label>
+      <input type="email" id="email" name="email" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 5px;">
+
+      <label for="message" style="display: block; margin-top: 1rem;">Message :</label>
+      <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+
+      <button type="submit" style="background: #4caf50; color: #fff; padding: 0.75rem 1.5rem; border: none; border-radius: 5px; font-weight: bold; cursor: pointer;">Envoyer</button>
+    </form>
   </section>
 
   <footer>
